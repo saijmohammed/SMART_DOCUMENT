@@ -1,0 +1,170 @@
+[
+  {
+    "timestamp": "2026-05-24 21:15:13",
+    "file_name": "TP2-Preparation.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP2-Preparation.pdf",
+    "pages": 3,
+    "words": 478,
+    "title": "TP2 — EXTENSION : PRÉPARATION ENVIRONNEMENT",
+    "summary_preview": "SQL> ALTER PLUGGABLE DATABASE PDB2 OPEN; Pluggable database altered. SQL> ALTER PLUGGABLE DATABASE PDB2 SAVE STATE; Pluggable database altered. SQL> ALTER PLUGGABLE DATABASE PDB3 OPEN; ALTER PLUGGABLE DATABASE PDB3 SAVE STATE; Pluggable database altered. SQL> ",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 17:00:54",
+    "file_name": "TP 3 DataWarehousig.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP 3 DataWarehousig.pdf",
+    "pages": 8,
+    "words": 17,
+    "title": "- Créer un utilisateur local (HR_RO) :",
+    "summary_preview": "- Créer un utilisateur local (HR_RO) :",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:59:56",
+    "file_name": "UIR_Project_Brief_MultiAgent_AI.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\UIR_Project_Brief_MultiAgent_AI.pdf",
+    "pages": 2,
+    "words": 515,
+    "title": "Building Multi-Agent AI Systems",
+    "summary_preview": "Integrated Project Building Multi-Agent AI Systems Prof. At least one agent must use a deep learning model you trained as a functional tool — not decoration. The system must include error handling, logging, and a human-in-the-loop checkpoint. Technical Stack A",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:56:13",
+    "file_name": "cours1 clouddwh.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\cours1 clouddwh.pdf",
+    "pages": 46,
+    "words": 1609,
+    "title": "CLOUD DATA WAREHOUSING",
+    "summary_preview": "→ Quelle est l’architecture proposée Une base de données distribuée est une base de données dont les éléments de données sont répartis sur plusieurs sites, régions ou même différents pays. Contrairement aux bases de données traditionnelles qui sont centralisée",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:49:02",
+    "file_name": "cours1 clouddwh.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\cours1 clouddwh.pdf",
+    "pages": 46,
+    "words": 1609,
+    "title": "CLOUD DATA WAREHOUSING",
+    "summary_preview": "→ Quelle est l’architecture proposée Une base de données distribuée est une base de données dont les éléments de données sont répartis sur plusieurs sites, régions ou même différents pays. Contrairement aux bases de données traditionnelles qui sont centralisée",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:42:28",
+    "file_name": "UIR_Project_Brief_MultiAgent_AI.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\UIR_Project_Brief_MultiAgent_AI.pdf",
+    "pages": 2,
+    "words": 515,
+    "title": "Building Multi-Agent AI Systems",
+    "summary_preview": "Integrated Project Building Multi-Agent AI Systems Prof. At least one agent must use a deep learning model you trained as a functional tool — not decoration. The system must include error handling, logging, and a human-in-the-loop checkpoint. Technical Stack A",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:38:13",
+    "file_name": "TP 3 DataWarehousig.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP 3 DataWarehousig.pdf",
+    "pages": 8,
+    "words": 17,
+    "title": "- Créer un utilisateur local (HR_RO) :",
+    "summary_preview": "- Créer un utilisateur local (HR_RO) :",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:34:50",
+    "file_name": "TP4_CLOUD.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP4_CLOUD.pdf",
+    "pages": 7,
+    "words": 941,
+    "title": "Université Interna-onale de Rabat",
+    "summary_preview": "La table source réside dans PDB1 ; les fragments sont réparDs selon le critère du montant total des commandes (ORDER_TOTAL). Le test de connecDvité confirme l’accès aux 5 commandes de la table source. La table FRAG_ORDERS_LOW a ensuite été créée par sélecDon d",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:28:56",
+    "file_name": "TP 3 DataWarehousig.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP 3 DataWarehousig.pdf",
+    "pages": 8,
+    "words": 17,
+    "title": "- Créer un utilisateur local (HR_RO) :",
+    "summary_preview": "- Créer un utilisateur local (HR_RO) :",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:25:50",
+    "file_name": "TP 3 DataWarehousig.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP 3 DataWarehousig.pdf",
+    "pages": 8,
+    "words": 17,
+    "title": "- Créer un utilisateur local (HR_RO) :",
+    "summary_preview": "- Créer un utilisateur local (HR_RO) :",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:22:40",
+    "file_name": "TP4_CLOUD.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP4_CLOUD.pdf",
+    "pages": 7,
+    "words": 941,
+    "title": "Université Interna-onale de Rabat",
+    "summary_preview": "La table source réside dans PDB1 ; les fragments sont réparDs selon le critère du montant total des commandes (ORDER_TOTAL). Le test de connecDvité confirme l’accès aux 5 commandes de la table source. La table FRAG_ORDERS_LOW a ensuite été créée par sélecDon d",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:19:03",
+    "file_name": "TP2-Preparation.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP2-Preparation.pdf",
+    "pages": 3,
+    "words": 478,
+    "title": "TP2 — EXTENSION : PRÉPARATION ENVIRONNEMENT",
+    "summary_preview": "SQL> ALTER PLUGGABLE DATABASE PDB2 OPEN; Pluggable database altered. SQL> ALTER PLUGGABLE DATABASE PDB2 SAVE STATE; Pluggable database altered. SQL> ALTER PLUGGABLE DATABASE PDB3 OPEN; ALTER PLUGGABLE DATABASE PDB3 SAVE STATE; Pluggable database altered. SQL> ",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 16:17:27",
+    "file_name": "UIR_Project_Brief_MultiAgent_AI.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\UIR_Project_Brief_MultiAgent_AI.pdf",
+    "pages": 2,
+    "words": 515,
+    "title": "Building Multi-Agent AI Systems",
+    "summary_preview": "Integrated Project Building Multi-Agent AI Systems Prof. At least one agent must use a deep learning model you trained as a functional tool — not decoration. The system must include error handling, logging, and a human-in-the-loop checkpoint. Technical Stack A",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 14:16:32",
+    "file_name": "TP4_CLOUD.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP4_CLOUD.pdf",
+    "pages": 7,
+    "words": 941,
+    "title": "Université Interna-onale de Rabat",
+    "summary_preview": "La table source réside dans PDB1 ; les fragments sont réparDs selon le critère du montant total des commandes (ORDER_TOTAL). Le test de connecDvité confirme l’accès aux 5 commandes de la table source. La table FRAG_ORDERS_LOW a ensuite été créée par sélecDon d",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 14:06:31",
+    "file_name": "TP6_Etudiants.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP6_Etudiants.pdf",
+    "pages": 13,
+    "words": 1072,
+    "title": "TP6 - Optimisation des performances (DWH SH)",
+    "summary_preview": "Dans le TP, Oracle a utilisé un TABLE ACCESS FULL sur la table L’Index Scan permet à Oracle d’accéder rapidement aux lignes grâce à un index sans parcourir toute la table. Dans le TP, Oracle a utilisé un INDEX FULL SCAN sur l’index DEPARTMENTS_PK. Oracle crée ",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 13:53:41",
+    "file_name": "UIR_Project_Brief_MultiAgent_AI.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\UIR_Project_Brief_MultiAgent_AI.pdf",
+    "pages": 2,
+    "words": 515,
+    "summary_preview": "S8 — Integrated Project AI & Big Data Program — UIR | 2025–2026 1 Integrated Project Building Multi-Agent AI Systems Prof. Hakim Hafidi | 4 weeks | Teams of 3 The Project Design, build, and evaluate a multi-agent system where specialized AI",
+    "translation_language": "fr"
+  },
+  {
+    "timestamp": "2026-05-24 13:50:57",
+    "file_name": "cvsaij.pdf",
+    "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\cvsaij.pdf",
+    "pages": 1,
+    "words": 175,
+    "summary_preview": "INFORMATICIEN Mohammed Saij Etudes et diplômes Titulaire d'un Bac+2 en Informatique de l'École Supérieure de Technologie, avec deux années d'expérience académique intensive. Compétences solides dans le développement de sites web, d'applicat",
+    "translation_language": "fr"
+  }
+]

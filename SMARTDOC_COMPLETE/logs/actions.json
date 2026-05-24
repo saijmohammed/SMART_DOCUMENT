@@ -1,0 +1,387 @@
+[
+  {
+    "timestamp": "2026-05-24T20:15:09+00:00",
+    "agent": "Orchestrator",
+    "action": "analyze_start",
+    "status": "info",
+    "details": {
+      "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP2-Preparation.pdf",
+      "do_summary": true,
+      "do_explanation": true,
+      "do_translation": true,
+      "target_language": "fr"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:09+00:00",
+    "agent": "ExtractorAgent",
+    "action": "run",
+    "status": "info",
+    "details": {
+      "pdf_path": "C:\\Users\\pc\\Desktop\\SMARTDOC_COMPLETE\\uploads\\TP2-Preparation.pdf",
+      "role": "PDF Extraction Specialist"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:09+00:00",
+    "agent": "ExtractorAgent",
+    "action": "extract_pdf_text",
+    "status": "success",
+    "details": {
+      "file": "TP2-Preparation.pdf",
+      "pages": 3,
+      "word_count": 478,
+      "char_count": 4155
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:09+00:00",
+    "agent": "ExtractorAgent",
+    "action": "run",
+    "status": "success",
+    "details": {
+      "pages": 3,
+      "words": 478,
+      "error": null
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:09+00:00",
+    "agent": "ClassifierAgent",
+    "action": "run",
+    "status": "info",
+    "details": {
+      "role": "Deep Learning Document Classifier",
+      "text_len": 4155
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:09+00:00",
+    "agent": "ClassifierAgent",
+    "action": "classify_document",
+    "status": "success",
+    "details": {
+      "category": "Business / Invoice",
+      "confidence": 0.5,
+      "mode": "heuristic_fallback",
+      "all_scores": {
+        "Course / Academic": 0.0,
+        "Research Paper": 0.0,
+        "Report": 0.0,
+        "Business / Invoice": 1.0,
+        "Administrative": 0.0,
+        "Legal / Contract": 0.0,
+        "Medical / Health": 0.0,
+        "Technical / Engineering": 0.0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:09+00:00",
+    "agent": "ClassifierAgent",
+    "action": "run",
+    "status": "success",
+    "details": {
+      "category": "Business / Invoice",
+      "confidence": 0.5,
+      "mode": "heuristic_fallback",
+      "error": null
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:09+00:00",
+    "agent": "SummarizerAgent",
+    "action": "run",
+    "status": "info",
+    "details": {
+      "role": "Document Summarisation Specialist",
+      "text_len": 4155
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:10+00:00",
+    "agent": "SummarizerAgent",
+    "action": "gemini_error",
+    "status": "warning",
+    "details": {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 49.607475903s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '49s'}]}}"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:10+00:00",
+    "agent": "SummarizerAgent",
+    "action": "summarize_text",
+    "status": "success",
+    "details": {
+      "mode": "extractive",
+      "summary_chars": 579,
+      "key_points": 6
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:10+00:00",
+    "agent": "SummarizerAgent",
+    "action": "run",
+    "status": "success",
+    "details": {
+      "mode": "extractive",
+      "error": null
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:10+00:00",
+    "agent": "ExplainerAgent",
+    "action": "run",
+    "status": "info",
+    "details": {
+      "role": "Content Explanation Specialist",
+      "category": "Business / Invoice"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:11+00:00",
+    "agent": "ExplainerAgent",
+    "action": "gemini_error",
+    "status": "warning",
+    "details": {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 48.532608453s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:11+00:00",
+    "agent": "ExplainerAgent",
+    "action": "explain_text",
+    "status": "success",
+    "details": {
+      "mode": "local",
+      "terms": [
+        "pluggable",
+        "database",
+        "oradata",
+        "alter",
+        "admin"
+      ],
+      "level": "Intermédiaire"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:11+00:00",
+    "agent": "ExplainerAgent",
+    "action": "run",
+    "status": "success",
+    "details": {
+      "mode": "local",
+      "level": "Intermédiaire",
+      "error": null
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:11+00:00",
+    "agent": "TranslatorAgent",
+    "action": "run",
+    "status": "info",
+    "details": {
+      "role": "Multilingual Translation Specialist",
+      "target": "fr"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:12+00:00",
+    "agent": "TranslatorAgent",
+    "action": "gemini_error",
+    "status": "warning",
+    "details": {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 47.484148098s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:13+00:00",
+    "agent": "TranslatorAgent",
+    "action": "translate_text",
+    "status": "success",
+    "details": {
+      "target_language": "fr",
+      "mode": "deep_translator",
+      "chars": 784
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:13+00:00",
+    "agent": "TranslatorAgent",
+    "action": "run",
+    "status": "success",
+    "details": {
+      "mode": "deep_translator",
+      "chars": 784,
+      "error": null
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:13+00:00",
+    "agent": "Orchestrator",
+    "action": "analyze_complete",
+    "status": "success",
+    "details": {
+      "file": "TP2-Preparation.pdf",
+      "category": "Business / Invoice",
+      "mode_dl": "heuristic_fallback"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:20+00:00",
+    "agent": "ChatAgent",
+    "action": "run",
+    "status": "info",
+    "details": {
+      "role": "Document Q&A Specialist",
+      "q_len": 46,
+      "has_gemini": true
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:21+00:00",
+    "agent": "ChatAgent",
+    "action": "answer_question",
+    "status": "success",
+    "details": {
+      "mode": "Groq",
+      "q_len": 46,
+      "a_len": 837
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:21+00:00",
+    "agent": "ChatAgent",
+    "action": "run",
+    "status": "success",
+    "details": {
+      "mode": "Groq",
+      "error": null
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:29+00:00",
+    "agent": "ChatAgent",
+    "action": "run",
+    "status": "info",
+    "details": {
+      "role": "Document Q&A Specialist",
+      "q_len": 8,
+      "has_gemini": true
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:30+00:00",
+    "agent": "ChatAgent",
+    "action": "answer_question",
+    "status": "success",
+    "details": {
+      "mode": "Groq",
+      "q_len": 8,
+      "a_len": 807
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:30+00:00",
+    "agent": "ChatAgent",
+    "action": "run",
+    "status": "success",
+    "details": {
+      "mode": "Groq",
+      "error": null
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:55+00:00",
+    "agent": "ChatAgent",
+    "action": "run",
+    "status": "info",
+    "details": {
+      "role": "Document Q&A Specialist",
+      "q_len": 49,
+      "has_gemini": true
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:58+00:00",
+    "agent": "ChatAgent",
+    "action": "answer_question",
+    "status": "success",
+    "details": {
+      "mode": "Groq",
+      "q_len": 49,
+      "a_len": 2054
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:15:58+00:00",
+    "agent": "ChatAgent",
+    "action": "run",
+    "status": "success",
+    "details": {
+      "mode": "Groq",
+      "error": null
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:24:27+00:00",
+    "agent": "TranslatorAgent",
+    "action": "gemini_error",
+    "status": "warning",
+    "details": {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 32.432848561s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32s'}]}}"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:24:29+00:00",
+    "agent": "TranslatorAgent",
+    "action": "translate_text",
+    "status": "success",
+    "details": {
+      "target_language": "ar",
+      "mode": "deep_translator",
+      "chars": 726
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:24:39+00:00",
+    "agent": "TranslatorAgent",
+    "action": "gemini_error",
+    "status": "warning",
+    "details": {
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 20.667267212s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}"
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:24:40+00:00",
+    "agent": "TranslatorAgent",
+    "action": "translate_text",
+    "status": "success",
+    "details": {
+      "target_language": "ar",
+      "mode": "deep_translator",
+      "chars": 726
+    }
+  },
+  {
+    "timestamp": "2026-05-24T20:57:37+00:00",
+    "agent": "ClassifierAgent",
+    "action": "classify_document",
+    "status": "success",
+    "details": {
+      "category": "Course / Academic",
+      "confidence": 0.8136,
+      "mode": "pytorch_model",
+      "all_scores": {
+        "Administrative": 0.0088,
+        "Business / Invoice": 0.0114,
+        "Course / Academic": 0.8136,
+        "Legal / Contract": 0.0329,
+        "Medical / Health": 0.0142,
+        "Report": 0.0864,
+        "Research Paper": 0.0181,
+        "Technical / Engineering": 0.0146
+      }
+    }
+  }
+]
